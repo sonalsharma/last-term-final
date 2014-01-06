@@ -1,0 +1,559 @@
+@charset "UTF-8";
+/* CSS Document */
+
+@-moz-viewport{width:device-width; scale:1;}
+@-ms-viewport{width:device-width; scale:1;}
+@-o-viewport{width:device-width; scale:1;}
+@-webkit-viewport{width:device-width; scale:1;}
+@viewport{width:device-width; scale:1;}
+
+/*Define Accordion box*/
+.accordion { 
+	width:100%; 
+	overflow:hidden;
+	background-color:#fff;
+	 
+}
+
+/*General Accordion****************************************************************************/
+
+/*Set style of open slide*/
+.accordion section:target { 
+	background:#fff; 
+	padding:1em;
+}
+
+.accordion section:target:hover { 
+	background:#FFF; 
+	opacity:1.0;
+}
+
+.accordion section:target h2 {
+	width:100%;
+	text-align:left;
+	padding-top:1.5rem;
+}
+
+.accordion section:target h2 a{ 
+	color:#000; 
+	padding:0;
+	border-bottom:1px solid #CCC;
+}
+
+.accordion section:target p {
+	display:block;
+}
+
+.accordion section:target img {
+	display:block;
+}
+
+.accordion section h2 a{
+	padding:1em;
+	display:block; 
+	font-size:1.3rem; 
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+	}
+
+/*set style of closed slide*/
+.accordion section{ 
+	overflow:hidden; 
+	color:#000; 
+	cursor:pointer; 
+	background-image:url(../images/textured_paper.png);
+	margin:0.5em auto;
+	padding:0.5em;
+}
+
+.accordion section:hover {
+	background-image:url(../images/textured_paper.png);
+	border-radius:5px;
+	opacity:0.5;
+}
+
+.accordion section p { 
+	display:none; 
+}
+
+.accordion section img{ 
+	display:none; 
+}
+
+.accordion section h2 { 
+	display:block; 
+	font-size:1.3rem; 
+	font-weight:normal;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+/*End General Accordion****************************************************************************/
+
+/* Set Content ****************/
+
+html {
+	-moz-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	-o-text-size-adjust:100%;
+	-webkit-text-size-adjust:100%;
+	text-size-adjust:100%;
+}
+
+body {
+	width:100%;
+	font-family: 'Source Sans Pro', sans-serif;
+	line-height:1.5rem;
+	background-image:url(../images/light_wool.png);
+}
+
+
+img {
+	width: 100%;
+}
+
+.masthead {
+	text-align:center;
+}
+
+.logo {
+	width:100%;
+	position:relative;
+	display:none;
+}
+
+h1 {
+	width: 90%;
+	margin: 1rem auto;
+	font-family: 'Droid Sans', sans-serif;
+	font-size:1.5rem;
+	text-align:center;
+	border-bottom:1px solid #999;
+}
+
+.h1-link,
+.h1-link:link,
+.h1-link:visited{
+	text-decoration:none;
+	color:#333;
+	font-weight:bold;
+	border-bottom:1px solid #999; 
+}
+
+.h1-link:hover,
+.h1-link:active,
+.h1-link:focus{
+	color:#000;
+	border-bottom:10px solid #999;
+}
+
+.wrapper {
+	margin-top:1.5rem;
+	padding: 0 5%;
+	overflow:auto;
+	background-image:url(../images/light_wool.png);
+}
+
+.wrapper p {
+	font-size:.90rem;
+	margin-bottom:1.5rem;
+}
+
+#usedproducts img {
+	width:160px;
+	max-width:100%;
+	margin: 4rem auto 1rem;
+}
+
+.textcenter {
+	text-align:center;
+}
+
+/* End set content **************/
+
+/*Set Social*/
+
+.icons {
+	margin-top:1.5rem;
+	border-top:1px solid #999;
+	padding-top:1.5rem;
+}
+
+.hide-text {
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	display:block;
+}
+
+.social li a,
+.social li a:link,
+.social li a:visited{
+	display:inline-block;
+	height:40px;
+	width:40px;
+	margin-right:1rem;
+	text-align:center;
+	padding-top:0.6rem;
+	
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	
+	color:#fff;
+	/*background-color:#222;*/
+	
+	-webkit-box-shadow: inset 0px 0px 0px 40px #222;
+	-moz-box-shadow: inset 0px 0px 0px 40px #222;
+	-ms-box-shadow: inset 0px 0px 0px 40px #222;
+	-o-box-shadow: inset 0px 0px 0px 40px #222;
+	box-shadow: inset 0px 0px 0px 40px #222;
+}
+
+.social li a:hover,
+.social li a:active,
+.social li a:focus{
+	
+	color: #222;
+	
+	-webkit-box-shadow: inset 0px 0px 0px 3px #222;
+	-moz-box-shadow: inset 0px 0px 0px 3px #222;
+	-ms-box-shadow: inset 0px 0px 0px 3px #222;
+	-o-box-shadow: inset 0px 0px 0px 3px #222;
+	box-shadow: inset 0px 0px 0px 3px #222;
+}
+
+.ease-all {
+	-webkit-transition: all 350ms ease-in-out;
+	-moz-transition: all 350ms ease-in-out;
+	-ms-transition: all 350ms ease-in-out;
+	-o-transition: all 350ms ease-in-out;
+	transition: all 350ms ease-in-out;
+}
+
+/*End Set Social***************/
+
+/* Set Footer ******************/
+
+footer {
+	padding:1.5rem 2% 3rem;
+	text-align:center;
+	margin:auto;
+	clear:both;
+}
+
+footer li {
+	display:inline-block;
+}
+
+footer p {
+	color:#000;
+	font-size:0.95rem;
+}
+
+/* End set footer ****************/
+
+
+@media only screen and (min-width: 35em){
+	
+	.logo {
+	display:block;
+}
+	
+	/*Vertical Accordion *************************************************************************/
+.vertical section{ height:100%; width:100%;
+	-webkit-transition: all 450ms ease-in;
+	-moz-transition: all 450ms ease-in;
+	-ms-transition: all 450ms ease-in;
+	-o-transition: all 450ms ease-in;
+	transition: all 450ms ease-in;
+}
+
+
+/*Set height of the slide*/
+.vertical :target{ height:100%; width:100%; }
+
+.vertical section h2 { position:relative;}
+
+
+/*Set style of open slide*/
+.accordion section:target { 
+	background-image:url(../images/light_wool.png); 
+	padding:1em;
+	opacity:1.0;
+}
+
+.accordion section:target:hover { 
+	background-image:url(../images/light_wool.png); 
+}
+
+.accordion section:target h2 {
+	width:100%;
+	text-align:left;
+}
+
+.accordion section:target h2 a{ 
+	color:#000; 
+	padding-bottom:1rem;
+	font-size:2rem;
+	border-bottom:1px dotted #CCC;
+	margin-top:2rem;
+}
+
+.accordion section:target p {
+	display:block;
+	font-size:1.2rem;
+	line-height:1.8rem;
+	opacity:1.0;
+}
+
+.accordion section:target img {
+	display:block;
+}
+
+.accordion section h2 a{
+	padding:1em;
+	display:block; 
+	font-size:2.5rem;
+	font-weight:normal;
+	color:#000;
+	text-decoration:none;
+	margin:1rem auto 1rem;
+	}
+
+/*set style of closed slide*/
+.accordion section{ 
+	overflow:hidden; 
+	color:#000; 
+	cursor:pointer; 
+	background-image:url(../images/textured_paper.png);
+	margin:0.5em auto;
+	padding:0.5em;
+	opacity:0.5;
+}
+
+.accordion section:hover {
+	background-image:url(../images/textured_paper.png);
+	border-radius:5px;
+	opacity:1.0;
+}
+
+.accordion section p { 
+	display:none; 
+}
+
+.accordion section img{ 
+	display:none; 
+}
+
+.accordion section h2 { 
+	display:block; 
+	font-size:2rem; 
+	font-weight:normal;
+	color:#fff;
+	text-decoration:none;
+	text-align:center;
+}
+
+
+h1 {
+	width: 100%;
+	margin: 2rem auto;
+	font-size:3.5rem;
+	text-align:center;
+	padding-bottom:2rem;
+	border-bottom:1px solid #999;
+}
+
+}
+
+@media only screen and (min-width: 45em){
+	
+	.logo {
+	display:none;
+}
+
+/*Set style of open slide*/
+
+.accordion section:target h2 a{ 
+	font-size:2.5rem;
+	margin-top:3rem;
+}
+
+.accordion section:target p {
+	font-size:1.3rem;
+	line-height:2.3rem;
+}
+
+.accordion section h2 a{
+	font-size:3rem; 
+	}
+
+/*set style of closed slide*/
+
+.accordion section h2 { 
+	font-size:3rem; 
+}
+
+h1 {
+	margin: 4rem auto;
+	font-size:5.5rem;
+	padding-bottom:3rem;
+}
+
+/*Set Icons*/
+
+.icons {
+	margin-bottom:1.5rem;
+}
+
+.social li a,
+.social li a:link,
+.social li a:visited{
+	height:70px;
+	width:70px;
+	margin-right:2rem;
+	padding-top:1rem;
+	font-size:2.5rem;
+	
+	-webkit-box-shadow: inset 0px 0px 0px 100px #222;
+	-moz-box-shadow: inset 0px 0px 0px 100px #222;
+	-ms-box-shadow: inset 0px 0px 0px 100px #222;
+	-o-box-shadow: inset 0px 0px 0px 100px #222;
+	box-shadow: inset 0px 0px 0px 100px #222;
+}
+
+/*End Set Social***************/
+
+}
+
+@media only screen and (min-width: 65em){
+	
+/*Set style of open slide*/
+.accordion section:target { 
+	padding:1em 13%;
+	margin:1rem auto;
+}
+
+.accordion section:target:hover { 
+	margin:1rem auto;
+}
+
+.accordion section:target h2 a{ 
+	font-size:3rem;
+	margin-top:15rem;
+}
+
+.accordion section:target p {
+	font-size:1.3rem;
+	line-height:2.5rem;
+}
+
+.accordion section h2 a{
+	font-size:3.5rem;
+	margin:0.5px auto 0.5px;
+	}
+
+/*set style of closed slide*/
+
+.accordion section:hover {
+	margin:0.5rem 0.3%;
+}
+
+/*Set Icons*/
+
+.icons {
+	margin-top:1.5rem;
+	border-top:1px solid #999;
+	padding-top:1.5rem;
+	margin-bottom:1.5rem;
+}
+
+.social li a,
+.social li a:link,
+.social li a:visited{
+	display:inline-block;
+	height:100px;
+	width:100px;
+	margin-right:2.5rem;
+	text-align:center;
+	padding-top:1.5rem;
+	font-size:3.5rem;
+	
+	-webkit-border-radius:50%;
+	-moz-border-radius:50%;
+	-ms-border-radius:50%;
+	-o-border-radius:50%;
+	border-radius:50%;
+	
+	-webkit-box-shadow: inset 0px 0px 0px 100px #222;
+	-moz-box-shadow: inset 0px 0px 0px 100px #222;
+	-ms-box-shadow: inset 0px 0px 0px 100px #222;
+	-o-box-shadow: inset 0px 0px 0px 100px #222;
+	box-shadow: inset 0px 0px 0px 100px #222;
+}
+
+.social li a:hover,
+.social li a:active,
+.social li a:focus{
+	
+	
+	-webkit-box-shadow: inset 0px 0px 0px 3px #222;
+	-moz-box-shadow: inset 0px 0px 0px 3px #222;
+	-ms-box-shadow: inset 0px 0px 0px 3px #222;
+	-o-box-shadow: inset 0px 0px 0px 3px #222;
+	box-shadow: inset 0px 0px 0px 3px #222;
+}
+/*End Set Social***************/
+
+header {
+	position:fixed;
+	top:0;
+	right:0;
+	left:0;
+	z-index:1;
+	height:9rem;
+	background-image:url(../images/tweed.png);
+
+}
+
+
+.wrapper {
+	margin-top:11rem;
+	padding: 0 5%;
+	z-index:2;
+	background-image:url(../images/light_wool.png);
+}
+
+h1 {
+	width: 100%;
+	margin: 4rem auto 6rem;
+	font-size:5.5rem;
+	text-align:center;
+	padding-bottom:3.5rem;
+	border-bottom:2px solid #CCC;
+}
+
+.h1-link,
+.h1-link:link,
+.h1-link:visited{
+	text-decoration:none;
+	color:#fff;
+	font-weight:bold;
+	border:0px solid #999; 
+}
+
+.h1-link:hover,
+.h1-link:active,
+.h1-link:focus{
+	color:#000;
+	border: 6px solid #000;
+	opacity:0.3;
+	text-shadow: 1px 0px #fff;
+}
+	
+}
